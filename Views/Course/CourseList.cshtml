@@ -1,0 +1,5 @@
+@model List<Course>
+  <h1>Courses List</h1>
+
+  @foreach(var item in Model){ @await Html.PartialAsync("_Course", item) }
+</Course>
